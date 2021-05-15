@@ -126,8 +126,8 @@ var embed = new Discord.MessageEmbed()
     }
     if(db.get(`user_${member.id}.warns`) === 5){
         //Mute the person
-        var main = msg.guild.roles.cache.find(role => role.name === '✔️VERIFIED✔️');
-        var muteRole = msg.guild.roles.cache.find(role => role.name === '❌MUTED ❌');
+        var main = msg.guild.roles.cache.find(role => role.name === 'Member');
+        var muteRole = msg.guild.roles.cache.find(role => role.name === 'Muted');
         var userLog = new Discord.MessageEmbed()
         .setColor('0x05ff4c')
         .setTitle(`You have been kicked from ${msg.guild.name}!\nReason: Auto kick for 5 warns`)
@@ -152,8 +152,8 @@ var embed = new Discord.MessageEmbed()
     }
     if(db.get(`user_${member.id}.warns`) === 6){
         //Mute the person
-        var main = msg.guild.roles.cache.find(role => role.name === '✔️VERIFIED✔️');
-        var muteRole = msg.guild.roles.cache.find(role => role.name === '❌MUTED ❌');
+        var main = msg.guild.roles.cache.find(role => role.name === 'Member');
+        var muteRole = msg.guild.roles.cache.find(role => role.name === 'Muted');
         var userLog = new Discord.MessageEmbed()
         .setColor('0x05ff4c')
         .setTitle(`You have been banned from ${msg.guild.name}!\nReason: Auto temp-ban (2 days) for 6 warns`)
@@ -181,8 +181,8 @@ var embed = new Discord.MessageEmbed()
     }
     if(db.get(`user_${member.id}.warns`) === 7){
         //Mute the person
-        var main = msg.guild.roles.cache.find(role => role.name === '✔️VERIFIED✔️');
-        var muteRole = msg.guild.roles.cache.find(role => role.name === '❌MUTED ❌');
+        var main = msg.guild.roles.cache.find(role => role.name === 'Member');
+        var muteRole = msg.guild.roles.cache.find(role => role.name === 'Muted');
         var userLog = new Discord.MessageEmbed()
         .setColor('0x05ff4c')
         .setTitle(`You have been banned from ${msg.guild.name}!\nReason: Auto perm-ban for 7 warns`)
@@ -206,8 +206,8 @@ var embed = new Discord.MessageEmbed()
     }
     if(db.get(`user_${member.id}.warns`) === 8){
         //Mute the person
-        var main = msg.guild.roles.cache.find(role => role.name === '✔️VERIFIED✔️');
-        var muteRole = msg.guild.roles.cache.find(role => role.name === '❌MUTED ❌');
+        var main = msg.guild.roles.cache.find(role => role.name === 'Member');
+        var muteRole = msg.guild.roles.cache.find(role => role.name === 'Muted');
         var userLog = new Discord.MessageEmbed()
         .setColor('0x05ff4c')
         .setTitle(`You have been kicked from ${msg.guild.name}!\nReason: Auto perm-ban for 8 warns`)

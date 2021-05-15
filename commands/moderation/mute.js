@@ -8,7 +8,7 @@ module.exports = {
     name:"mute",
     async execute(client, msg, args)  {
         msg.delete()
-        var logs = msg.guild.channels.cache.find(c => c.name === '🔐↣｜logs'); // Define logging channel
+        var logs = msg.guild.channels.cache.find(c => c.name === 'logs'); // Define logging channel
         var verify = msg.guild.emojis.cache.find(emoji => emoji.name === 'yes'); // Define confirmation emoji
         if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply("You do not have permission to use this command");
  
@@ -16,8 +16,8 @@ module.exports = {
         if(!target) return msg.reply('you need to mention a user for me to mute them!')
 
  
-        var main = msg.guild.roles.cache.find(role => role.name === '✔️VERIFIED✔️');
-        var muteRole = msg.guild.roles.cache.find(role => role.name === '❌MUTED ❌');
+        var main = msg.guild.roles.cache.find(role => role.name === 'Member');
+        var muteRole = msg.guild.roles.cache.find(role => role.name === 'Muted');
  
         var targetID = msg.guild.members.cache.get(target.id)
         if(targetID.hasPermission('MANAGE_MESSAGES')) return msg.reply("You can not mute a staff member"); 

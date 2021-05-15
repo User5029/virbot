@@ -24,7 +24,7 @@ module.exports = {
 
         var reason = args.splice(1).join(' ');
         if(!reason) return msg.reply('You did not mention a reason!').then(msg => msg.delete({timeout: 60000}));
-        let channel = msg.guild.channels.cache.find(c => c.name === '🔐↣｜logs');
+        let channel = msg.guild.channels.cache.find(c => c.name === 'logs');
         var log = new Discord.MessageEmbed()
         .setColor('0x05ff4c')
         .setDescription(`${user} has been banned by ${msg.author} for "**${reason}**`)
