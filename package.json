@@ -1,0 +1,34 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:https://github.com/jameshaswellukcom/discordbotvircon.git"
+  },
+  "author": "James H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameshaswellukcom/discordbotvircon/issues"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "git": "^0.1.5",
+    "mongoose": "^5.12.9",
+    "node": "^14.16.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "quick.db": "^7.1.2"
+  }
+}
